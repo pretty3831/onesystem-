@@ -2729,7 +2729,7 @@ client.on("guildMemberAdd", member => {
                               ctx.font = '30px Arial';
                               ctx.fontSize = '28px';
                               ctx.fillStyle = "#FFFFFF";
-      ctx.fillText(`Welcome To ${member.guild.name}`, 245, 80);
+      ctx.fillText(`Welcome To ${member.guild.name}`, 314,133);
       
                               //AVATARً
                               let Avatar = Canvas.Image;
@@ -2741,7 +2741,7 @@ client.on("guildMemberAdd", member => {
                    
                                  ctx.clip();
 
-                        ctx.drawImage(ava, 7, 8, 227, 225);
+                        ctx.drawImage(ava, 17, 5, 191, 191);
                               ctx.closePath();
 
                             
