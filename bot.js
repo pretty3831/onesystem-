@@ -35,7 +35,7 @@ const sql = require("sqlite");
 
 const superagent = require("superagent")
 client.on('message' , async (message) => {
- if (message.content.startsWith(prefix + 'yn')) {
+ if (message.content.startsWith(prefix + 'قول')) {
 
 let color = '0xffffff'
 
@@ -451,7 +451,7 @@ client.on('message', message => {
     if (message.content.startsWith("رابط")) {
         message.channel.createInvite({
         thing: true,
-        maxUses: 1,
+        maxUses: 5,
         maxAge: 3600,
     }).then(invite =>
       message.author.sendMessage(invite.url)
@@ -467,7 +467,7 @@ client.on('message', message => {
               const Embed11 = new Discord.RichEmbed()
         .setColor("RANDOM")
         
-    .setDescription(" مدة الرابط : ساعه  عدد استخدامات الرابط : 1 ")
+    .setDescription(" مدة الرابط : ساعه  عدد استخدامات الرابط : 5 ")
       message.author.sendEmbed(Embed11)
     }
 });
@@ -628,7 +628,7 @@ client.on('message', message => {
     }
 });
 client.on('message', msg => {
-	var prefix = "#";
+	var prefix = ".";
   if (msg.author.bot) return;
   if (!msg.content.startsWith(prefix)) return;
   let command = msg.content.split(" ")[0];
@@ -766,7 +766,7 @@ console.log('[38ab] Send By: ' + message.author.username)
 client.on('message', ra3d => {
 var prefix = ".";
                         let args = ra3d.content.split(" ").slice(1).join(" ")
-if(ra3d.content.startsWith(prefix + 'ccolors')) {
+if(ra3d.content.startsWith(prefix + 'الوان')) {
     if(!args) return ra3d.channel.send('`يرجي اختيار كم لون `');
              if (!ra3d.member.hasPermission('MANAGE_ROLES')) return ra3d.channel.sendMessage('`**⚠ | `[MANAGE_ROLES]` لا يوجد لديك صلاحية**'); 
               ra3d.channel.send(`**✅ |Created __${args}__ Colors**`);
@@ -1190,7 +1190,7 @@ client.on('message', message => {
 client.on('message', message => {
 	var prefix = ".";
 if(!message.channel.guild) return;
-if(message.content.startsWith(prefix + 'move')) {
+if(message.content.startsWith(prefix + 'اسحب')) {
  if (message.member.hasPermission("MOVE_MEMBERS")) {
  if (message.mentions.users.size === 0) {
  return message.channel.send("``لاستخدام الأمر اكتب هذه الأمر : " +prefix+ "move [USER]``")
@@ -1711,7 +1711,7 @@ if (!points[message.author.id]) points[message.author.id] = {
     message.channel.send(`**Sorry, Please Wait ${pretty(r, {verbose:true})}...**`).then(m => m.delete(5000));
     return;
     }
-    if ( message.content == prefix+'speed'){
+    if ( message.content == prefix+'اسرع'){
        
         try{
 }catch(e){
@@ -1785,7 +1785,7 @@ if (message.content.startsWith(prefix + 'perms')) {
   
  
 
-if (command == "za5") {
+if (command == "زخرف") {
     let say = new Discord.RichEmbed()
         .setTitle('Text emboss :')
    message.channel.send(`\n ${zalgo(args.join(' '))}`);
@@ -1798,7 +1798,7 @@ client.on("message", message => {
 	var args = message.content.split(' ').slice(1); 
 	var msg = message.content.toLowerCase();
 	if( !message.guild ) return;
-	if( !msg.startsWith( prefix + 'role' ) ) return;
+	if( !msg.startsWith( prefix + 'رول' ) ) return;
 	if(!message.member.hasPermission('MANAGE_ROLES')) return message.channel.send(' **__ليس لديك صلاحيات__**');
 	if( msg.toLowerCase().startsWith( prefix + 'roleremove' ) ){
 		if( !args[0] ) return message.reply( '**:x: يرجى وضع الشخص المراد سحب منه الرتبة**' );
@@ -1905,7 +1905,7 @@ var prefix = ".";
 
 
 client.on('message', message => {
-    if (message.content == ".quas") {
+    if (message.content == ".اسال") {
          message.react('🤔','👌')
         var x = ['اين يلعب مصطفي فتحي؟', 'ما هو اسم ملعب بارشالونة', 'ما هو يوم الحج الأكبر؟', 'ما هو أطول أنهار أوربا ؟', 'ما هو اسم بيت الدجاج', 'ما هو أول بنك قام بالنشاط المصرفي في السعودية عام 1926م' , 'ما هو أول جامع أقيم في مصر','ما هو أطول نهر في آسيا','ما هو أقرب كوكب إلى الشمس','ما هو الحيوان الذي يُسمى البهنس','ما هو اول مسجد أسس بالمدينة','متى وقع صلح الحديبية عام 6هـ او 3هـ او 2هـ؟','متى قامت أمريكا بأول رحلة فضائية','متى كانت غزوة خيبر؟','ما هي السورة التي تبدأ بقوله تعالى " يا أيها النبي اتق الله ولا تطع الكافرين والمنافقين إن الله كان عليما حكيما ".اجب؟','ما هي السورة التي يطلق عليها عروس القرآن','ماذا يسمى من لايقرأ ولايكتب','ماهي أول دولة استخدمت طابع البريد','ماهو شعار الولايات المتحدة الامريكية','ماهو اذكي الحيوانات','من هو مكتشف أمريكا','مامعنى "فرعون" اجب؟','ماهو اقرب كوكب إلى الارض','ما هي نسبه المياه من الكره الارضيه?','كم عدد السجدات في القرآن الكريم؟','من هو بطل كاس العالم في عام 1966','أين أفتتح اول متحف في العالم?','ماأسم أنثى الحمار?','كم تبلغ درجه حراره الشمس؟','من هي مدينة الضباب','أين توجد أطول سكة حديد في العالم?'
         ];
@@ -1951,7 +1951,7 @@ let prefix = '.'
 client.on('message',function(message) {
 	let prefix = ".";
 let args = message.content.split(" ").slice(1).join(" ");
-if(message.content.startsWith(prefix + "say")) {
+if(message.content.startsWith(prefix + "انت")) {
 if(!args) return;
 message.channel.send(`**# ${args}**`); // محطوط # عشان محد يستخدم البوت لتبنيد / طرد احد من السيرفر
 }
@@ -1967,7 +1967,7 @@ if (!message.content.startsWith(prefix)) return;
 	let command = message.content.split(" ")[0];
 	 command = command.slice(prefix.length);
 	let args = message.content.split(" ").slice(1);
-	if (command == "mute") {
+	if (command == "اسكت") {
 		if (!message.channel.guild) return;
 		if(!message.guild.member(message.author).hasPermission("MANAGE_MESSAGES")) return message.reply("انت لا تملك صلاحيات . ").then(msg => msg.delete(5000));
 		if(!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return message.reply("البوت لايملك صلاحيات ").then(msg => msg.delete(5000));;
@@ -1998,7 +1998,7 @@ ${message.author.tag} تمت معاقبتك بواسطة
 		.setColor("RANDOM")
 	user.send( muteembeddm);
   }
-if(command === `unmute`) {
+if(command === `اتكلم`) {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.sendMessage("**ليس لديك صلاحية لفك عن الشخص ميوت**:x: ").then(m => m.delete(5000));
 if(!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) return message.reply("**ما عندي برمشن**").then(msg => msg.delete(6000))
 
@@ -2224,7 +2224,7 @@ client.on("message", message => {
               
           if(!message.channel.guild) return;
    if(message.author.bot) return;
-      if(message.content === prefix + "image"){ 
+      if(message.content === prefix + "صورة"){ 
           const embed = new Discord.RichEmbed()
   
       .setTitle(`This is  ** ${message.guild.name} **  Photo !`)
@@ -2417,7 +2417,7 @@ client.on('message', message => {
 
   let args = message.content.split(" ").slice(1);
 
-  if (command == "kick") {
+  if (command == "طرد") {
                if(!message.channel.guild) return message.reply('** This command only for servers**');
          
   if(!message.guild.member(message.author).hasPermission("KICK_MEMBERS")) return message.reply("**You Don't Have ` KICK_MEMBERS ` Permission**");
@@ -2510,7 +2510,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content.startsWith(".avatar")) {
+    if (message.content.startsWith(".صوره")) {
 if(!message.channel.guild) return;
         var mentionned = message.mentions.users.first();
     var client;
