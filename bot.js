@@ -2698,7 +2698,7 @@ client.on("guildMemberAdd", member => {
           var Canvas = require('canvas')
       var jimp = require('jimp')
       
-      const w = ['PicsArt_07-17-07.58.02 (1).png'];
+      const w = ['PicsArt_01-19-03.41.54.png'];
       
               let Image = Canvas.Image,
                   canvas = new Canvas(557, 241),
@@ -2735,7 +2735,7 @@ client.on("guildMemberAdd", member => {
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(191, 191, 112.3, 0, Math.PI*2, true);
+                 ctx.arc(120, 120, 112.3, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
