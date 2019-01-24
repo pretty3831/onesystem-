@@ -229,7 +229,7 @@ if (err) console.error(err);
 client.on('message',function(message) {
   if(!message.channel.guild) return;
 
-const prefix = "#";
+const prefix = ".";
     if (message.content === prefix + "discrim") {
 let messageArray = message.content.split(" ");
 let args = messageArray.slice(1);
