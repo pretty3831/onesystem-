@@ -2713,22 +2713,22 @@ client.on("guildMemberAdd", member => {
       
       })
       
-                      let url = member.user.displayAvatarURL.endsWith(".webp") ? member.user.displayAvatarURL.slice(5, -20) + ".gif" : member.user.displayAvatarURL;
+                      let url = member.user.displayAvatarURL.endsWith(".webp") ? member.user.displayAvatarURL.slice(5, -30) + ".gif" : member.user.displayAvatarURL;
                       jimp.read(url, (err, ava) => {
                           if (err) return console.log(err);
                           ava.getBuffer(jimp.MIME_PNG, (err, buf) => {
                               if (err) return console.log(err);
       
                                     ctx.font = '30px Arial Bold';
-                              ctx.fontSize = '20px';
+                              ctx.fontSize = '19px';
                               ctx.fillStyle = "#FFFFFF";
                                 ctx.fillText(member.user.username, 245, 150);
                               
                               //NAMEً
                               ctx.font = '30px Arial';
-                              ctx.fontSize = '28px';
+                              ctx.fontSize = '20px';
                               ctx.fillStyle = "#FFFFFF";
-      ctx.fillText(`Welcome To ${member.guild.name}`, 245, 80);
+      ctx.fillText(`Welcome To ${member.guild.name}`, 0, 0);
       
                               //AVATARً
                               let Avatar = Canvas.Image;
