@@ -2695,11 +2695,10 @@ client.on("guildMemberAdd", member => {
          .addField(': تاريخ دخولك السيرفر',`${moment(member.joinedAt).format('D/M/YYYY h:mm a ')} \n\`\`${moment(member.joinedAt).startOf(' ').fromNow()}\`\``, true)      
          .setFooter(`${h.tag}`,"https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif")
      welcomer.send({embed:heroo});          
-         
-      var Canvas = require('canvas')
+          var Canvas = require('canvas')
       var jimp = require('jimp')
       
-      const w = ['PicsArt_01-19-03.41.54.png'];
+      const w = ['PicsArt_07-17-07.58.02 (1).png'];
       
               let Image = Canvas.Image,
                   canvas = new Canvas(557, 241),
@@ -2729,19 +2728,19 @@ client.on("guildMemberAdd", member => {
                               ctx.font = '30px Arial';
                               ctx.fontSize = '28px';
                               ctx.fillStyle = "#FFFFFF";
-      ctx.fillText(`Welcome To ${member.guild.name}`, 314,133);
+      ctx.fillText(`Welcome To ${member.guild.name}`, 245, 80);
       
                               //AVATARً
                               let Avatar = Canvas.Image;
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.beginPath();
-                 ctx.arc(120.8, 120.5, 112.3, 0, Math.PI*2, true);
+                 ctx.arc(191, 191, 112.3, 0, Math.PI*2, true);
                    ctx.closePath();
                    
                                  ctx.clip();
 
-                        ctx.drawImage(ava, 17, 5, 191, 191);
+                        ctx.drawImage(ava, 7, 8, 227, 225);
                               ctx.closePath();
 
                             
