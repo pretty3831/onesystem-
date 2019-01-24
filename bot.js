@@ -2783,4 +2783,4 @@ client.on('ready', function(){
 
 
 
-client.login('NTM3ODQyOTkyOTYzMzg3NDE0.DyrI1g.fJgFxmyUyMS8AFkJkffucgdRYAo');
+client.login(process.env.BOT_TOKEN);
