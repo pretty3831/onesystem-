@@ -2740,7 +2740,7 @@ client.on("guildMemberAdd", member => {
                    
                                  ctx.clip();
  
-                       ctx.drawImage(ava, 7, 8, 191, 191);
+                       ctx.drawImage(ava, 7, 8, 211, 211);
                               ctx.closePath();
 
                             
