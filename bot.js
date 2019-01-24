@@ -2722,7 +2722,7 @@ client.on("guildMemberAdd", member => {
                                     ctx.font = '30px Arial Bold';
                               ctx.fontSize = '19px';
                               ctx.fillStyle = "#FFFFFF";
-                                ctx.fillText(member.user.username, 245, 150);
+                                ctx.fillText(member.user.username, 314, 133);
                               
                               //NAMEً
                               ctx.font = '30px Arial';
